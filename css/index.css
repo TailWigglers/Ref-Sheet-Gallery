@@ -1,3 +1,9 @@
+/* ----------------------------------------------------- */
+/* Global */
+:root {
+  --gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +11,8 @@
   color: #ebe4c9;
 }
 
+/* ----------------------------------------------------- */
+/* Wrapper container */
 .wrapper,
 html,
 body {
@@ -16,11 +24,8 @@ body {
   flex-direction: column;
 }
 
-.title {
-  margin-top: 10px;
-  font-size: 25pt;
-}
-
+/* ----------------------------------------------------- */
+/* Header bar */
 .header-container {
   display: flex;
   background-color: #272c35;
@@ -36,6 +41,12 @@ body {
   align-items: center;
 }
 
+.logo-text {
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
 .title-container {
   display: flex;
   flex: 1;
@@ -46,147 +57,191 @@ body {
   text-align: center;
 }
 
+.title {
+  margin-top: 10px;
+  font-size: 15pt;
+}
+
 .psuedo-container {
   flex: 1;
 }
 
+/* ----------------------------------------------------- */
+/* Gallery */
 .gallery-container {
   color: white;
   display: flex;
   align-items: stretch;
   flex-direction: row;
   flex: 2;
+  flex-flow: row wrap;
 }
 
 .dragon-title {
   margin-bottom: 50px;
-  font-size: 48pt;
+  font-size: 25pt;
+}
+
+.dragon-small-title {
+  font-size: 15pt;
 }
 
 .gallery-section {
   display: flex;
-  flex: 1 1;
+  flex: 1 100%;
   justify-content: center;
   align-items: flex-end;
-}
-
-.section-seledrex {
-  background-color: #9b4136;
-  overflow: hidden;
-}
-
-.seledrex-bg {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%),
-    url("../img/seledrex_profile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  transition: all 0.5s;
-  text-align: center;
-}
-
-.section-czero {
-  background-color: #bf882b;
-  overflow: hidden;
-}
-
-.czero-bg {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%),
-    url("../img/czero_profile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
-  transition: all 0.5s;
-  text-align: center;
 }
 
 .section-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: stretch;
 }
 
-.section-couple {
-  flex: 2;
-  background-color: #a85e2d;
-  overflow: hidden;
+.subsection-container {
+  display: flex;
+  flex: 3;
 }
 
-.couple-bg {
+.bg-img {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/couple.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  transition: all 0.5s;
-  text-align: center;
+  transition: transform 0.5s;
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
-.other-container {
-  display: flex;
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+}
+
+/* ----------------------------------------------------- */
+/* Seledrex */
+.section-seledrex {
+  background-color: #272c35;
+  overflow: hidden;
+}
+
+.seledrex-bg {
+  background-image: var(--gradient), url("../img/seledrex_profile.png");
+  background-position: right;
+}
+
+/* ----------------------------------------------------- */
+/* Czero */
+.section-czero {
+  background-color: #272c35;
+  overflow: hidden;
+}
+
+.czero-bg {
+  background-image: var(--gradient), url("../img/czero_profile.png");
+  background-position: left;
+}
+
+/* ----------------------------------------------------- */
+/* Couple */
+.section-couple {
   flex: 3;
+  background-color: #272c35;
+  overflow: hidden;
 }
 
+.couple-bg {
+  background-image: var(--gradient), url("../img/couple.jpg");
+  background-position: center;
+}
+
+/* ----------------------------------------------------- */
+/* Vemora */
 .section-vemora {
   display: flex;
-  background-color: black;
+  background-color: #272c35;
   flex: 1;
   overflow: hidden;
 }
 
 .vemora-bg {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/vemora.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: var(--gradient), url("../img/vemora.png");
   background-position: left;
-  transition: all 0.5s;
-  text-align: center;
 }
 
+/* ----------------------------------------------------- */
+/* Kire */
 .section-kire {
   display: flex;
-  background-color: #b0d7ff;
+  background-color: #272c35;
   flex: 1;
   overflow: hidden;
 }
 
 .kire-bg {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/kire.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: var(--gradient), url("../img/kire.png");
   background-position: center;
-  transition: all 0.5s;
-  text-align: center;
-  transform: scale(1);
 }
 
+/* ----------------------------------------------------- */
+/* Hover */
 .hover-parent:hover .hover-child {
   background-color: white;
   opacity: 0.9;
   transform: scale(1.1);
+}
+
+@media all and (min-width: 800px) {
+  .logo-text {
+    font-size: 25px;
+  }
+
+  .title {
+    font-size: 25pt;
+  }
+
+  .dragon-title {
+    font-size: 48pt;
+  }
+
+  .dragon-small-title {
+    font-size: 32pt;
+  }
+
+  .gallery-section {
+    flex: 1 1;
+  }
+
+  .section-container {
+    flex-direction: column;
+  }
+
+  .section-couple {
+    flex: 2;
+  }
 }
