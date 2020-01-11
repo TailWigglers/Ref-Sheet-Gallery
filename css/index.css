@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lalezar", cursive;
 }
 
 .wrapper,
@@ -15,10 +16,16 @@ body {
   flex-direction: column;
 }
 
+.title {
+  color: #ebe4c9;
+  font-size: 28pt;
+}
+
 .header-container {
   display: flex;
-  background-color: #493548;
+  background-color: #272c35;
   justify-content: center;
+  align-items: center;
   color: white;
 }
 
@@ -47,7 +54,7 @@ body {
   overflow: hidden;
 }
 
-.seledrex-child {
+.seledrex-bg {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -57,7 +64,7 @@ body {
     url("../img/seledrex_profile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   transition: all 0.5s;
   text-align: center;
 }
@@ -67,7 +74,7 @@ body {
   overflow: hidden;
 }
 
-.czero-child {
+.czero-bg {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -77,55 +84,87 @@ body {
     url("../img/czero_profile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
   transition: all 0.5s;
   text-align: center;
 }
 
-.section-other {
+.section-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
 }
 
-.section-both {
-  display: flex;
-  flex: 1;
+.section-couple {
+  flex: 2;
   background-color: #a85e2d;
+  overflow: hidden;
+}
+
+.couple-bg {
+  display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/couple.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+  text-align: center;
 }
 
 .other-container {
   display: flex;
-  flex: 1;
-  justify-content: space-evenly;
+  flex: 3;
 }
 
-.side-char-1 {
+.section-vemora {
   display: flex;
-  background-color: wheat;
+  background-color: black;
   flex: 1;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
 }
 
-.side-char-2 {
+.vemora-bg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/vemora.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.section-kire {
   display: flex;
   background-color: #b0d7ff;
   flex: 1;
+  overflow: hidden;
+}
+
+.kire-bg {
+  display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), url("../img/kire.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+  text-align: center;
+  transform: scale(1);
 }
 
-.section-seledrex:hover .seledrex-child {
-  background-color: white;
-  opacity: 0.9;
-  transform: scale(1.1);
-}
-
-.section-czero:hover .czero-child {
+.hover-parent:hover .hover-child {
   background-color: white;
   opacity: 0.9;
   transform: scale(1.1);
