@@ -1,0 +1,145 @@
+/* ----------------------------------------------------- */
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lalezar", cursive;
+}
+
+/* ----------------------------------------------------- */
+/* Wrapper container */
+.wrapper,
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ----------------------------------------------------- */
+/* Header bar */
+.header-container {
+  display: flex;
+  background-color: #272c35;
+  justify-content: space-between;
+  align-items: center;
+  color: #ebe4c9;
+}
+
+.logo-container {
+  margin-left: 10px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.logo-text {
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 15px;
+  color: #ebe4c9;
+}
+
+.title-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 15pt;
+}
+
+.psuedo-container {
+  flex: 1;
+}
+
+.reference-area-container {
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.reference-sheet {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  flex: 5;
+}
+
+.seledrex {
+  background-image: url("../img/seledrex_sfw.png");
+}
+
+.reference-info-container {
+  background-color: #181b20;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.info-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.info-row-1 {
+  margin-top: 10px;
+  color: #868686;
+}
+
+.info-row-2 {
+  background-color: #702b23;
+}
+
+.info-col {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (min-width: 800px) {
+  .logo-text {
+    font-size: 25px;
+  }
+
+  .title {
+    font-size: 25pt;
+  }
+
+  .dragon-title {
+    font-size: 48pt;
+  }
+
+  .dragon-small-title {
+    font-size: 32pt;
+  }
+
+  .gallery-section {
+    flex: 1 1;
+  }
+
+  .section-container {
+    flex-direction: column;
+  }
+
+  .section-couple {
+    flex: 2;
+  }
+}
