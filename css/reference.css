@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Lalezar", cursive;
 }
 
 /* ----------------------------------------------------- */
@@ -27,6 +26,7 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #ebe4c9;
+  font-family: "Lalezar", cursive;
 }
 
 .logo-container {
@@ -62,58 +62,114 @@ body {
   flex: 1;
 }
 
+/* ----------------------------------------------------- */
+/* Reference area */
 .reference-area-container {
   display: flex;
   flex: 1;
+  justify-content: center;
   align-items: stretch;
-  flex-direction: row;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 
+/* ----------------------------------------------------- */
+/* Reference sheet */
 .reference-sheet {
   background-color: black;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.seledrex {
-  background-image: url("../img/seledrex_sfw.png");
+.responsive-image {
+  max-width: 100%;
 }
 
+/* ----------------------------------------------------- */
+/* Reference Info */
 .reference-info-container {
   background-color: #181b20;
   display: flex;
-  flex: 2;
+  flex: 1;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+  font-size: 14px;
+  font-family: "Source Code Pro", monospace;
+  color: #868686;
+  min-width: 0px;
 }
 
 .info-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 20px;
 }
 
-.info-row-1 {
-  margin-top: 10px;
-  color: #868686;
-}
-
-.info-row-2 {
-  background-color: #702b23;
+.color-box {
+  display: flex;
+  flex: initial;
+  width: 25px;
+  height: 70%;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
 }
 
 .info-col {
   display: flex;
-  flex: 1;
+  flex: 2;
   justify-content: center;
   align-items: center;
+  padding-top: 15px;
 }
 
+.info-part {
+  justify-content: flex-start;
+  flex: 3;
+}
+
+.info-hex {
+  flex: 1;
+}
+
+/* ----------------------------------------------------- */
+/* Reference colors */
+.primary {
+  background-color: #9c4136;
+}
+
+.underside {
+  background-color: #ffc693;
+}
+
+.secondary {
+  background-color: #702b23;
+}
+
+.horns-claws {
+  background-color: #bab29e;
+}
+
+.flesh {
+  background-color: #b15949;
+}
+
+.wing-grad-start {
+  background-color: #391718;
+}
+
+.wing-grad-end {
+  background-color: #53292a;
+}
+
+.eyes {
+  background-color: #f5ec7d;
+}
+
+/* ----------------------------------------------------- */
+/* Mobile / Desktop */
 @media all and (min-width: 800px) {
   .logo-text {
     font-size: 25px;
@@ -123,23 +179,20 @@ body {
     font-size: 25pt;
   }
 
-  .dragon-title {
-    font-size: 48pt;
+  .reference-area-container {
+    flex-direction: row;
   }
 
-  .dragon-small-title {
-    font-size: 32pt;
+  .reference-info-container {
+    font-size: 16px;
+    min-width: 550px;
   }
 
-  .gallery-section {
-    flex: 1 1;
+  .info-row {
+    height: 30px;
   }
 
-  .section-container {
-    flex-direction: column;
-  }
-
-  .section-couple {
-    flex: 2;
+  .color-box {
+    width: 50px;
   }
 }
