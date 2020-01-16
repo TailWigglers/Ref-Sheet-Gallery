@@ -134,6 +134,48 @@ body {
   flex: 1;
 }
 
+.info-text {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+}
+
+.info-download {
+  display: flex;
+  font-family: "Lalezar", cursive;
+  color: #ebe4c9;
+  height: 60px;
+  flex: initial;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-button {
+  font-size: 20px;
+  width: 200px;
+  height: 70%;
+  background-color: #272c35;
+  border-color: #868686;
+}
+
+.download-button:hover {
+  background-color: #404857 !important;
+  border-color: #868686 !important;
+}
+
+.download-button:focus {
+  background-color: #272c35 !important;
+  border-color: #868686 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.download-button:active {
+  background-color: rgb(70, 79, 94) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /* ----------------------------------------------------- */
 /* Reference colors */
 .primary {
