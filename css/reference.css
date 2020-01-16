@@ -1,8 +1,17 @@
 /* ----------------------------------------------------- */
 /* Global */
+:root {
+  --title-color: #ebe4c9;
+  --text-color: #868686;
+}
+
 * {
   margin: 0;
   padding: 0;
+}
+
+.hr {
+  border-color: var(--text-color);
 }
 
 /* ----------------------------------------------------- */
@@ -25,7 +34,7 @@ body {
   background-color: #272c35;
   justify-content: space-between;
   align-items: center;
-  color: #ebe4c9;
+  color: var(--title-color);
   font-family: "Lalezar", cursive;
 }
 
@@ -37,10 +46,20 @@ body {
 }
 
 .logo-text {
-  margin-top: 10px;
+  margin-top: 14px;
   margin-left: 5px;
   font-size: 15px;
   color: #ebe4c9;
+}
+
+.arrow {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 5px solid var(--title-color);
+  border-right: 5px solid var(--title-color);
+  margin-left: 10px;
+  transform: rotate(-135deg);
 }
 
 .title-container {
@@ -54,12 +73,15 @@ body {
 }
 
 .title {
-  margin-top: 10px;
+  margin-top: 14px;
   font-size: 15pt;
 }
 
-.psuedo-container {
+.toggle-container {
+  display: flex;
   flex: 1;
+  justify-content: flex-end;
+  margin-right: 10px;
 }
 
 /* ----------------------------------------------------- */
@@ -94,9 +116,9 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Source Code Pro", monospace;
-  color: #868686;
+  color: var(--text-color);
   min-width: 0px;
 }
 
@@ -134,10 +156,19 @@ body {
   flex: 1;
 }
 
+.info-pseudo {
+  flex: 1;
+}
+
 .info-text {
   display: flex;
-  flex: 1;
-  padding: 10px;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.info-notes {
+  color: #cc4444;
 }
 
 .info-download {
@@ -154,26 +185,31 @@ body {
   font-size: 20px;
   width: 200px;
   height: 70%;
+  color: var(--title-color);
   background-color: #272c35;
-  border-color: #868686;
+  border-color: var(--text-color);
+  border-radius: 20px;
 }
 
 .download-button:hover {
   background-color: #404857 !important;
-  border-color: #868686 !important;
+  border-color: var(--text-color) !important;
+  color: var(--title-color) !important;
 }
 
 .download-button:focus {
   background-color: #272c35 !important;
-  border-color: #868686 !important;
+  border-color: var(--text-color) !important;
   outline: none !important;
   box-shadow: none !important;
+  color: var(--title-color) !important;
 }
 
 .download-button:active {
   background-color: rgb(70, 79, 94) !important;
   outline: none !important;
   box-shadow: none !important;
+  color: var(--title-color) !important;
 }
 
 /* ----------------------------------------------------- */

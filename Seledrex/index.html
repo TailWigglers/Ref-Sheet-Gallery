@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/main.css" />
@@ -18,14 +23,25 @@
   <body>
     <div class="wrapper">
       <div class="header-container">
-        <a href="https://tailwigglers.net/" class="logo-container">
-          <img src="../img/logo.png" width="60px"></img>
-          <h2 class="logo-text">Tail Wigglers</h2>
+        <a href="../index.html" class="logo-container">
+          <span class="arrow"></span>
+          <h2 class="logo-text">Character Selection</h2>
         </a>
         <div class="title-container">
           <h2 class="title">Seledrex Reference</h2>
         </div>
-        <div class="psuedo-container"></div>
+        <div class="toggle-container">
+          <input
+            id="toggle-event"
+            type="checkbox"
+            data-toggle="toggle"
+            data-width="100"
+            data-onstyle="danger"
+            data-offstyle="secondary"
+            data-on="NSFW"
+            data-off="SFW"
+          />
+        </div>
       </div>
       <div class="reference-area-container">
         <div class="reference-sheet">
@@ -34,8 +50,7 @@
         <div class="reference-info-container">
           <div class="info-row info-row-1">
             <div class="color-box"></div>
-            <div class="info-col info-part">
-            </div>
+            <div class="info-col info-part"></div>
             <div class="info-col info-hex">
               <p>HEX</p>
             </div>
@@ -44,8 +59,7 @@
             </div>
           </div>
           <div class="info-row">
-            <div class="color-box primary">
-            </div>
+            <div class="color-box primary"></div>
             <div class="info-col info-part">
               <p>Primary</p>
             </div>
@@ -140,9 +154,20 @@
               <p>245,236,125</p>
             </div>
           </div>
-          <hr>
+          <div class="info-pseudo"></div>
+          <hr class="hr" />
           <div class="info-text">
-            <p>Notes:<br>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            <h3 class="info-notes">Notes</h3>
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+              tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
+              semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien
+              ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean
+              fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+              Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor
+              neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis,
+              accumsan porttitor, facilisis luctus, metus
+            </p>
           </div>
           <div class="info-download">
             <button type="button" class="btn btn-primary download-button">
@@ -153,13 +178,10 @@
       </div>
     </div>
     <script src="../js/vendor/jquery-3.4.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
     <script src="../js/vendor/bootstrap.min.js"></script>
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/reference.js"></script>
   </body>
 </html>
