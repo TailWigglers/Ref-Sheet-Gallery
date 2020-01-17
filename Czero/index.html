@@ -2,32 +2,259 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title>Ref Sheet Gallery</title>
+    <title>Czero Reference | Tail Wigglers</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/temp.css" />
+    <link rel="stylesheet" href="../css/reference.css" />
+    <link rel="stylesheet" href="../css/czero.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
-  <body style="background-color: black;">
-    <div class=imgbox>
-      <img class="center-fit" src="../img/czero_sfw.png" alt="Czero" style="display: block; margin-left: auto; margin-right: auto;" />
+  <body>
+    <div class="wrapper">
+      <div class="header-container">
+        <a href="../index.html" class="logo-container">
+          <span class="arrow"></span>
+          <h2 class="logo-text">Character Selection</h2>
+        </a>
+        <div class="title-container">
+          <h2 class="title">Czero Reference</h2>
+        </div>
+        <div class="toggle-container">
+          <input
+            id="toggle-event"
+            type="checkbox"
+            data-toggle="toggle"
+            data-width="100"
+            data-onstyle="danger"
+            data-offstyle="secondary"
+            data-on="NSFW"
+            data-off="SFW"
+            data-style="ios"
+          />
+        </div>
+      </div>
+      <div class="reference-area-container">
+        <div class="reference-sheet">
+          <img src="../img/czero_sfw.png" class="responsive-image" />
+        </div>
+        <div class="reference-info-container">
+          <div class="info-row info-row-1">
+            <div class="color-box"></div>
+            <div class="info-col info-part"></div>
+            <div class="info-col info-hex">
+              <p>HEX</p>
+            </div>
+            <div class="info-col">
+              <p>RGB</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box body"></div>
+            <div class="info-col info-part">
+              <p>Body</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#BF882B</p>
+            </div>
+            <div class="info-col">
+              <p>191,136,43</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box underside"></div>
+            <div class="info-col info-part">
+              <p>Underside</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#667215</p>
+            </div>
+            <div class="info-col">
+              <p>102,114,21</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box markings"></div>
+            <div class="info-col info-part">
+              <p>Markings</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#385710</p>
+            </div>
+            <div class="info-col">
+              <p>56,87,16</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box horns"></div>
+            <div class="info-col info-part">
+              <p>Horns</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#C0B9B5</p>
+            </div>
+            <div class="info-col">
+              <p>192,185,181</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box horn-rings"></div>
+            <div class="info-col info-part">
+              <p>Horn Rings</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#1B2A0D</p>
+            </div>
+            <div class="info-col">
+              <p>27,42,13</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box ring"></div>
+            <div class="info-col info-part">
+              <p>Ring</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#9C4136</p>
+            </div>
+            <div class="info-col">
+              <p>156,65,54</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box wing-grad-1"></div>
+            <div class="info-col info-part">
+              <p>Ventral Wings 1</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#3D4D2F</p>
+            </div>
+            <div class="info-col">
+              <p>61,77,47</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box wing-grad-2"></div>
+            <div class="info-col info-part">
+              <p>Ventral Wings 2</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#8B892C</p>
+            </div>
+            <div class="info-col">
+              <p>61,77,47</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box eyes"></div>
+            <div class="info-col info-part">
+              <p>Eyes</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#A3B401</p>
+            </div>
+            <div class="info-col">
+              <p>163,180,1</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box pawpads"></div>
+            <div class="info-col info-part">
+              <p>Paw Pads</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#D2B074</p>
+            </div>
+            <div class="info-col">
+              <p>210,176,116</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box fins-border"></div>
+            <div class="info-col info-part">
+              <p>Fins Border</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#40301B</p>
+            </div>
+            <div class="info-col">
+              <p>64,48,27</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box fins-1"></div>
+            <div class="info-col info-part">
+              <p>Fins 1</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#695B4F</p>
+            </div>
+            <div class="info-col">
+              <p>105,91,79</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box fins-2"></div>
+            <div class="info-col info-part">
+              <p>Fins 2</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#C3A68E</p>
+            </div>
+            <div class="info-col">
+              <p>195,166,142</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box flesh"></div>
+            <div class="info-col info-part">
+              <p>Flesh</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#9A6656</p>
+            </div>
+            <div class="info-col">
+              <p>154,102,86</p>
+            </div>
+          </div>
+          <div class="info-pseudo"></div>
+          <hr class="hr" />
+          <div class="info-text">
+            <h3 class="info-notes">Notes</h3>
+              <li>
+                Czero has one marking on the left side of his nose. His cheek marking is on both sides.
+              </li>
+              <li>
+                The wingmembrane goes over his shoulder and down to his forelegs.
+              </li>
+              <li>
+                One red ring on his left horn.
+              </li>
+           </div>
+          <div class="info-download">
+            <button type="button" class="btn btn-primary download-button">
+              Download File
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-
-
     <script src="../js/vendor/jquery-3.4.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
     <script src="../js/vendor/bootstrap.min.js"></script>
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/reference.js"></script>
   </body>
 </html>

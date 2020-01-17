@@ -251,42 +251,6 @@ body {
 
 /* ------------------------------------------------------------------------- */
 
-/* Reference colors */
-
-.primary {
-  background-color: #9c4136;
-}
-
-.underside {
-  background-color: #ffc693;
-}
-
-.secondary {
-  background-color: #702b23;
-}
-
-.horns-claws {
-  background-color: #bab29e;
-}
-
-.flesh {
-  background-color: #b15949;
-}
-
-.wing-grad-start {
-  background-color: #391718;
-}
-
-.wing-grad-end {
-  background-color: #53292a;
-}
-
-.eyes {
-  background-color: #f5ec7d;
-}
-
-/* ------------------------------------------------------------------------- */
-
 /* Large display settings */
 
 @media all and (min-width: 800px) {
