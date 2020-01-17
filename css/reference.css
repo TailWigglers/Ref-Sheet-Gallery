@@ -84,6 +84,15 @@ body {
   margin-right: 10px;
 }
 
+.toggle.ios,
+.toggle-on.ios,
+.toggle-off.ios {
+  border-radius: 20rem;
+}
+.toggle.ios .toggle-handle {
+  border-radius: 20rem;
+}
+
 /* ----------------------------------------------------- */
 /* Reference area */
 .reference-area-container {
