@@ -129,9 +129,13 @@ body {
 
 .reference-sheet {
   background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 2;
 }
 
 .responsive-image {
@@ -277,6 +281,14 @@ body {
 
   .color-box {
     width: 50px;
+  }
+
+  /* Hacky stuff! Switch img out for background */
+
+  .responsive-image {
+    opacity: 0%;
+    height: 0px;
+    width: 0px;
   }
 }
 

@@ -1,65 +1,67 @@
+.czero-bg {
+  background-image: url("../img/czero_sfw.png");
+}
+
 .body {
-    background-color: #bf882b;
-  }
-  
-  .underside {
-    background-color: #667215;
-  }
-  
-  .markings {
-    background-color: #385710;
-  }
-  
-  .horns {
-    background-color: #c0b9b5;
-  }
-  
-  .horn-rings {
-    background-color: #1b2a0d;
-  }
+  background-color: #bf882b;
+}
 
-  .ring {
-    background-color: #9c4136;
-  }
-  
-  .wing-grad-1 {
-    background-color: #3d4d2f;
-  }
-  
-  .wing-grad-2 {
-    background-color: #8b892c;
-  }
-  
-  .eyes {
-    background-color: #a3b401;
+.underside {
+  background-color: #667215;
+}
 
-  }
+.markings {
+  background-color: #385710;
+}
 
-  .pawpads {
-    background-color: #d2b074;
+.horns {
+  background-color: #c0b9b5;
+}
 
-  }
+.horn-rings {
+  background-color: #1b2a0d;
+}
 
-  .fins-border {
-    background-color: #40301b;
-  }
+.ring {
+  background-color: #9c4136;
+}
 
-  .fins-1 {
-    background-color: #695b4f;
-  }
+.wing-grad-1 {
+  background-color: #3d4d2f;
+}
 
-  .fins-2 {
-    background-color: #c3a68e;
-  }
+.wing-grad-2 {
+  background-color: #8b892c;
+}
 
-  .flesh {
-    background-color: #9a6656;
-  }
+.eyes {
+  background-color: #a3b401;
+}
 
-  .dick-1 {
-    background-color: #c45b42;
-  }
+.pawpads {
+  background-color: #d2b074;
+}
 
-  .dick-2 {
-    background-color: #a84e38;
-  }
+.fins-border {
+  background-color: #40301b;
+}
+
+.fins-1 {
+  background-color: #695b4f;
+}
+
+.fins-2 {
+  background-color: #c3a68e;
+}
+
+.flesh {
+  background-color: #9a6656;
+}
+
+.dick-1 {
+  background-color: #c45b42;
+}
+
+.dick-2 {
+  background-color: #a84e38;
+}
