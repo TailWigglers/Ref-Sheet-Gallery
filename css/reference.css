@@ -1,5 +1,7 @@
-/* ----------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
 /* Global */
+
 :root {
   --title-color: #ebe4c9;
   --text-color: #868686;
@@ -14,8 +16,10 @@
   border-color: var(--text-color);
 }
 
-/* ----------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
 /* Wrapper container */
+
 .wrapper,
 html,
 body {
@@ -27,8 +31,10 @@ body {
   flex-direction: column;
 }
 
-/* ----------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
 /* Header bar */
+
 .header-container {
   display: flex;
   background-color: #272c35;
@@ -77,6 +83,10 @@ body {
   font-size: 15pt;
 }
 
+/* ------------------------------------------------------------------------- */
+
+/* Toggle settings */
+
 .toggle-container {
   display: flex;
   flex: 1;
@@ -84,17 +94,27 @@ body {
   margin-right: 10px;
 }
 
-.toggle.ios,
-.toggle-on.ios,
-.toggle-off.ios {
-  border-radius: 20rem;
-}
-.toggle.ios .toggle-handle {
-  border-radius: 20rem;
+/* Mobile toggle button settings */
+
+.btn-outline-danger:hover {
+  background-color: transparent;
 }
 
-/* ----------------------------------------------------- */
+.btn-outline-secondary:hover {
+  background-color: transparent;
+}
+
+.toggle.btn-outline-secondary:hover .toggle-handle {
+  background-color: var(--secondary);
+}
+.toggle.btn-outline-danger:hover .toggle-handle {
+  background-color: var(--danger);
+}
+
+/* ------------------------------------------------------------------------- */
+
 /* Reference area */
+
 .reference-area-container {
   display: flex;
   flex: 1;
@@ -103,8 +123,10 @@ body {
   flex-direction: column;
 }
 
-/* ----------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
 /* Reference sheet */
+
 .reference-sheet {
   background-color: black;
   display: flex;
@@ -116,8 +138,10 @@ body {
   max-width: 100%;
 }
 
-/* ----------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
 /* Reference Info */
+
 .reference-info-container {
   background-color: #181b20;
   display: flex;
@@ -180,6 +204,10 @@ body {
   color: #cc4444;
 }
 
+/* ------------------------------------------------------------------------- */
+
+/* Download button */
+
 .info-download {
   display: flex;
   font-family: "Lalezar", cursive;
@@ -221,8 +249,10 @@ body {
   color: var(--title-color) !important;
 }
 
-/* ----------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
 /* Reference colors */
+
 .primary {
   background-color: #9c4136;
 }
@@ -255,8 +285,10 @@ body {
   background-color: #f5ec7d;
 }
 
-/* ----------------------------------------------------- */
-/* Mobile / Desktop */
+/* ------------------------------------------------------------------------- */
+
+/* Large display settings */
+
 @media all and (min-width: 800px) {
   .logo-text {
     font-size: 25px;
@@ -281,5 +313,24 @@ body {
 
   .color-box {
     width: 50px;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* Desktop toggle settings */
+
+@media (pointer: fine) {
+  .btn-outline-danger:hover {
+    background-color: var(--danger);
+  }
+
+  .btn-outline-secondary:hover {
+    background-color: var(--secondary);
+  }
+
+  .toggle[class*="btn-outline"]:hover .toggle-handle {
+    background-color: var(--light);
+    opacity: 0.5;
   }
 }
