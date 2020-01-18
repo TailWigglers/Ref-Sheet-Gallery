@@ -208,6 +208,11 @@ body {
   color: #cc4444;
 }
 
+.hideable {
+  visibility: hidden;
+  display: none;
+}
+
 /* ------------------------------------------------------------------------- */
 
 /* Download button */
