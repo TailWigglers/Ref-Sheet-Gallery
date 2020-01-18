@@ -226,10 +226,13 @@ body {
   font-size: 20px;
   width: 200px;
   height: 70%;
-  color: var(--title-color);
   background-color: #272c35;
   border-color: var(--text-color);
   border-radius: 20px;
+}
+
+.download-button > a {
+  color: var(--title-color);
 }
 
 .download-button:hover {
