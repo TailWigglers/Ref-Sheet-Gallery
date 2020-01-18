@@ -1,22 +1,37 @@
 $(function() {
   $("#toggle-boi").change(function() {
     var character = window.location.pathname.slice(1, -1);
+    var overEighteen = sessionStorage.getItem("over_eighteen");
+    console.log(overEighteen);
+
     if ($(this).prop("checked")) {
-      if (!confirm("You must be at least 18 years old to view this content!")) {
-        $("#toggle-event").bootstrapToggle("off");
+      if (overEighteen === "true") {
+        switchNSFW(character);
       } else {
-        document.getElementById("character-bg").style.backgroundImage =
-          "url(../img/" + character.toLowerCase() + "_nsfw.png)";
-        document.getElementById("character-img").src = "../img/" + character.toLowerCase() + "_nsfw.png";
-        document.getElementById("character-dl").href = "../dwn/" + character + "NSFW.png";
-        document.getElementById("character-dl").download = character + "NSFW.png";
+        if (!confirm("You must be at least 18 years old to view this content!")) {
+          $("#toggle-event").bootstrapToggle("off");
+        } else {
+          switchNSFW(character);
+          sessionStorage.setItem("over_eighteen", "true");
+        }
       }
     } else {
-      document.getElementById("character-bg").style.backgroundImage =
-        "url(../img/" + character.toLowerCase() + "_sfw.png)";
-      document.getElementById("character-img").src = "../img/" + character.toLowerCase() + "_sfw.png";
-      document.getElementById("character-dl").href = "../dwn/" + character + "SFW.png";
-      document.getElementById("character-dl").download = character + "SFW.png";
+      switchSFW(character);
     }
   });
 });
+
+function switchNSFW(character) {
+  document.getElementById("character-bg").style.backgroundImage =
+    "url(../img/" + character.toLowerCase() + "_nsfw.png)";
+  document.getElementById("character-img").src = "../img/" + character.toLowerCase() + "_nsfw.png";
+  document.getElementById("character-dl").href = "../dwn/" + character + "NSFW.png";
+  document.getElementById("character-dl").download = character + "NSFW.png";
+}
+
+function switchSFW(character) {
+  document.getElementById("character-bg").style.backgroundImage = "url(../img/" + character.toLowerCase() + "_sfw.png)";
+  document.getElementById("character-img").src = "../img/" + character.toLowerCase() + "_sfw.png";
+  document.getElementById("character-dl").href = "../dwn/" + character + "SFW.png";
+  document.getElementById("character-dl").download = character + "SFW.png";
+}
