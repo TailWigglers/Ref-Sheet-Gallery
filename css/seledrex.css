@@ -2,38 +2,38 @@
   background-image: url("../img/seledrex_sfw.png");
 }
 
-.primary {
+.seledrex-primary {
   background-color: #9c4136;
 }
 
-.underside {
+.seledrex-underside {
   background-color: #ffc693;
 }
 
-.secondary {
+.seledrex-secondary {
   background-color: #702b23;
 }
 
-.horns-claws {
+.seledrex-horns-claws {
   background-color: #bab29e;
 }
 
-.flesh {
+.seledrex-flesh {
   background-color: #b15949;
 }
 
-.wing-grad-start {
+.seledrex-wing-grad-start {
   background-color: #391718;
 }
 
-.wing-grad-end {
+.seledrex-wing-grad-end {
   background-color: #53292a;
 }
 
-.eyes {
+.seledrex-eyes {
   background-color: #f5ec7d;
 }
 
-.ring {
+.seledrex-ring {
   background-color: #dd811f;
 }
