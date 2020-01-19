@@ -206,7 +206,7 @@ body {
 }
 
 .vemora-bg {
-  background-image: var(--gradient), url("../img/vemora.png");
+  background-image: var(--gradient), url("../img/vemora_sfw.png");
   background-position: left;
 }
 

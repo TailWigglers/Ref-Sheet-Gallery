@@ -2,30 +2,290 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title>Ref Sheet Gallery</title>
+    <title>Vemora Reference | Tail Wigglers</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/temp.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/vendor/bootstrap4-toggle.css" />
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/vendor/normalize.css" />
+    <link rel="stylesheet" href="../css/vendor/main.css" />
+
+    <link rel="stylesheet" href="../css/reference.css" />
+    <link rel="stylesheet" href="../css/vemora.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
-  <body style="background-color: black;">
-    <div class=imgbox>
-      <img class="center-fit" src="../img/vemora.png" alt="Vemora" style="display: block; margin-left: auto; margin-right: auto;" />
+  <body>
+    <div class="wrapper">
+      <div class="header-container">
+        <a href="../index.html" class="logo-container">
+          <span class="arrow"></span>
+          <h2 class="logo-text">Character Selection</h2>
+        </a>
+        <div class="title-container">
+          <h2 class="title">Vemora Reference</h2>
+        </div>
+        <div class="toggle-container">
+          <input
+            id="toggle-boi"
+            type="checkbox"
+            data-toggle="toggle"
+            data-width="100"
+            data-onstyle="outline-danger"
+            data-offstyle="outline-secondary"
+            data-on="NSFW"
+            data-off="SFW"
+          />
+        </div>
+      </div>
+      <div class="reference-area-container">
+        <div id="character-bg" class="reference-sheet vemora-bg">
+          <img id="character-img" src="../img/vemora_sfw.png" class="responsive-image" />
+        </div>
+        <div class="reference-info-container">
+          <div class="info-row info-row-1">
+            <div class="color-box"></div>
+            <div class="info-col info-part"></div>
+            <div class="info-col info-hex">
+              <p>HEX</p>
+            </div>
+            <div class="info-col">
+              <p>RGB</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-body"></div>
+            <div class="info-col info-part">
+              <p>Body</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#BF882B</p>
+            </div>
+            <div class="info-col">
+              <p>191,136,43</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-back-wingbase"></div>
+            <div class="info-col info-part">
+              <p>Back & Wingbase</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#05329A</p>
+            </div>
+            <div class="info-col">
+              <p>5,50,154</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-underside"></div>
+            <div class="info-col info-part">
+              <p>Underside</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#DECEAC</p>
+            </div>
+            <div class="info-col">
+              <p>222,206,172</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-teeths"></div>
+            <div class="info-col info-part">
+              <p>Teeth</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#DBD8C9</p>
+            </div>
+            <div class="info-col">
+              <p>219,216,201</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-eyes-frontclaws-flesh"></div>
+            <div class="info-col info-part">
+              <p>Eyes & Frontclaws & Flesh</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#22B5D8</p>
+            </div>
+            <div class="info-col">
+              <p>34,181,216</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-frontpaws-tailgradient-1"></div>
+            <div class="info-col info-part">
+              <p>Frontpaws</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#2290D8</p>
+            </div>
+            <div class="info-col">
+              <p>34,144,216</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-backclaws"></div>
+            <div class="info-col info-part">
+              <p>Backclaws</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#8967C6</p>
+            </div>
+            <div class="info-col">
+              <p>137,103,198</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-backpaws"></div>
+            <div class="info-col info-part">
+              <p>Backpaws</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#5F3C9F</p>
+            </div>
+            <div class="info-col">
+              <p>95,60,159</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-horn-fur-tailgradient-3"></div>
+            <div class="info-col info-part">
+              <p>Horns & Backfur</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#462288</p>
+            </div>
+            <div class="info-col">
+              <p>70,34,136</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-ear-wingtip"></div>
+            <div class="info-col info-part">
+              <p>Inner ear</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#0D1A61</p>
+            </div>
+            <div class="info-col">
+              <p>13,26,97</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-ear-wingtip"></div>
+            <div class="info-col info-part">
+              <p>Wingtip</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#0D1a61</p>
+            </div>
+            <div class="info-col">
+              <p>13,26,97</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-back-wingbase"></div>
+            <div class="info-col info-part">
+              <p>Wingbase</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#05329A</p>
+            </div>
+            <div class="info-col">
+              <p>5,50,154</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-frontpaws-tailgradient-1"></div>
+            <div class="info-col info-part">
+              <p>Tail Gradient 1</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#2290D8</p>
+            </div>
+            <div class="info-col">
+              <p>134,144,216</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-tailgradient-2"></div>
+            <div class="info-col info-part">
+              <p>Tail Gradient 2</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#07389E</p>
+            </div>
+            <div class="info-col">
+              <p>7,56,158</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="color-box vemora-horn-fur-tailgradient-3"></div>
+            <div class="info-col info-part">
+              <p>Tail Gradient 3</p>
+            </div>
+            <div class="info-col info-hex">
+              <p>#462288</p>
+            </div>
+            <div class="info-col">
+              <p>70,34,136</p>
+            </div>
+          </div>
+          <div class="info-row hideable">
+            <div class="color-box member-1"></div>
+            <div class="info-col info-part">
+              <p>nobody expects</p>
+            </div>
+            <div class="info-col info-hex">
+              <p></p>
+            </div>
+            <div class="info-col">
+              <p></p>
+            </div>
+          </div>
+          <div class="info-row hideable">
+            <div class="color-box member-1"></div>
+            <div class="info-col info-part">
+              <p>the spanish inquisition</p>
+            </div>
+            <div class="info-col info-hex">
+              <p></p>
+            </div>
+            <div class="info-col">
+              <p></p>
+            </div>
+          </div>
+          <div class="info-pseudo"></div>
+          <hr />
+          <div class="info-text">
+            <h3 class="info-notes">Notes</h3>
+            <ul>
+              <li>Vemora has short fur on his body and longer, purple fur on his back</li>
+              <li>The wings, tailtip as well as the paws have a gradient</li>
+              <li>His pawpads are a darker color than the paw</li>
+            </ul>
+          </div>
+          <div class="info-download">
+            <a id="character-dl" href="../dwn/VemoraSFW.png" download="VemoraSFW.png">
+              <button type="button" class="btn btn-primary download-button">
+                Download File
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="../js/vendor/jquery-3.4.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
+    <script src="../js/vendor/bootstrap4-toggle.js"></script>
     <script src="../js/vendor/bootstrap.min.js"></script>
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/reference.js"></script>
   </body>
 </html>
