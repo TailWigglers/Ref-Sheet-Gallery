@@ -161,6 +161,10 @@ body {
   flex-direction: column;
 }
 
+.reference-character-container {
+  background-color: #0f1114;
+}
+
 /* ------------------------------------------------------------------------- */
 
 /* Reference sheet */
@@ -177,6 +181,15 @@ body {
 
 .responsive-image {
   max-width: 100%;
+}
+
+.reference-border {
+  border-width: 5px;
+  border-color: var(--text-color);
+  border-style: solid;
+  border-left: hidden;
+  border-top: hidden;
+  border-right: hidden;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -312,12 +325,16 @@ body {
     font-size: 25pt;
   }
 
-  .reference-area-container {
-    flex-direction: row;
-  }
-
   .reference-sheet {
     flex: 2;
+  }
+
+  .reference-character-container {
+    display: flex;
+  }
+
+  .reference-area-container-change {
+    flex-direction: row;
   }
 
   .reference-info-container {
