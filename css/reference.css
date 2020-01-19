@@ -173,7 +173,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 2;
 }
 
 .responsive-image {
@@ -317,9 +316,14 @@ body {
     flex-direction: row;
   }
 
+  .reference-sheet {
+    flex: 2;
+  }
+
   .reference-info-container {
     font-size: 16px;
     min-width: 550px;
+    max-width: 550px;
   }
 
   .info-row {
