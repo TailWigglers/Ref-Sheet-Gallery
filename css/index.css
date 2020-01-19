@@ -222,7 +222,7 @@ body {
 }
 
 .kire-bg {
-  background-image: var(--gradient), url("../img/kire.png");
+  background-image: var(--gradient), url("../img/kire_sfw.png");
   background-position: center;
 }
 
