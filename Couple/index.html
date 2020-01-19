@@ -2,31 +2,428 @@
 <html class="no-js" lang="">
   <head>
     <meta charset="utf-8" />
-    <title>Ref Sheet Gallery</title>
+    <title>Seledrex Reference | Tail Wigglers</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/temp.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/vendor/bootstrap4-toggle.css" />
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/vendor/normalize.css" />
+    <link rel="stylesheet" href="../css/vendor/main.css" />
+
+    <link rel="stylesheet" href="../css/reference.css" />
+    <link rel="stylesheet" href="../css/seledrex.css" />
+    <link rel="stylesheet" href="../css/czero.css" />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
-  <body style="background-color: black;">
-    <div class=imgbox>
-      <img src="../img/seledrex_sfw.png" alt="Seledrex" style="display: block; margin-left: auto; margin-right: auto;" />
-      <img class="center-fit" src="../img/czero_sfw.png" alt="Czero" style="display: block; margin-left: auto; margin-right: auto;" />
+  <body>
+    <div class="wrapper">
+      <div class="header-container">
+        <a href="../index.html" class="logo-container">
+          <span class="arrow"></span>
+          <h2 class="logo-text">Character Selection</h2>
+        </a>
+        <div class="title-container">
+          <h2 class="title">Seledrex Reference</h2>
+        </div>
+        <div class="toggle-container">
+          <input
+            id="toggle-boi"
+            type="checkbox"
+            data-toggle="toggle"
+            data-width="100"
+            data-onstyle="outline-danger"
+            data-offstyle="outline-secondary"
+            data-on="NSFW"
+            data-off="SFW"
+          />
+        </div>
+      </div>
+      <div class="reference-area-container">
+        <div class="reference-character-container reference-border">
+          <div id="character-bg" class="reference-sheet seledrex-bg reference-info-left">
+            <img id="character-img" src="../img/seledrex_sfw.png" class="responsive-image" />
+          </div>
+          <div class="reference-info-container reference-info-left">
+            <div class="info-row info-row-1">
+              <div class="color-box"></div>
+              <div class="info-col info-part"></div>
+              <div class="info-col info-hex">
+                <p>HEX</p>
+              </div>
+              <div class="info-col">
+                <p>RGB</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box seledrex-primary"></div>
+              <div class="info-col info-part">
+                <p>Primary</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#9C4136</p>
+              </div>
+              <div class="info-col">
+                <p>156,65,54</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box seledrex-underside"></div>
+              <div class="info-col info-part">
+                <p>Underside</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#FFC693</p>
+              </div>
+              <div class="info-col">
+                <p>255,198,147</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box seledrex-secondary"></div>
+              <div class="info-col info-part">
+                <p>Secondary</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#702B23</p>
+              </div>
+              <div class="info-col">
+                <p>112,43,35</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box seledrex-horns-claws"></div>
+              <div class="info-col info-part">
+                <p>Horns & Claws</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#BAB29E</p>
+              </div>
+              <div class="info-col">
+                <p>186,178,158</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box seledrex-flesh"></div>
+              <div class="info-col info-part">
+                <p>Flesh</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#B15949</p>
+              </div>
+              <div class="info-col">
+                <p>177,89,73</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box seledrex-wing-grad-start"></div>
+              <div class="info-col info-part">
+                <p>Wings & Paw Pads</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#391718</p>
+              </div>
+              <div class="info-col">
+                <p>57,23,24</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box seledrex-wing-grad-end"></div>
+              <div class="info-col info-part">
+                <p>Wings</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#53292A</p>
+              </div>
+              <div class="info-col">
+                <p>83,41,42</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box seledrex-eyes"></div>
+              <div class="info-col info-part">
+                <p>Eyes</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#F5EC7D</p>
+              </div>
+              <div class="info-col">
+                <p>245,236,125</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box seledrex-ring"></div>
+              <div class="info-col info-part">
+                <p>Ring</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#DD811F</p>
+              </div>
+              <div class="info-col">
+                <p>245,236,125</p>
+              </div>
+            </div>
+            <div class="info-pseudo"></div>
+            <hr />
+            <div class="info-text">
+              <h3 class="info-notes">Notes</h3>
+              <ul>
+                <li>Seledrex is a male dragon</li>
+                <li>There is a ring is on his left horn</li>
+                <li>The ring is Czero's body color</li>
+                <li>There are gradients on his legs, wings, and his tail</li>
+                <li>He has four digits on each paw</li>
+                <li>His eyes glow in darkness</li>
+              </ul>
+            </div>
+            <div class="info-download">
+              <a id="character-dl" href="../dwn/SeledrexSFW.png" download="SeledrexSFW.png">
+                <button type="button" class="btn btn-primary download-button">
+                  Download File
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="reference-character-container">
+          <div id="character-bg" class="reference-sheet czero-bg">
+            <img id="character-img" src="../img/czero_sfw.png" class="responsive-image" />
+          </div>
+          <div class="reference-info-container">
+            <div class="info-row info-row-1">
+              <div class="color-box"></div>
+              <div class="info-col info-part"></div>
+              <div class="info-col info-hex">
+                <p>HEX</p>
+              </div>
+              <div class="info-col">
+                <p>RGB</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-body"></div>
+              <div class="info-col info-part">
+                <p>Body</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#BF882B</p>
+              </div>
+              <div class="info-col">
+                <p>191,136,43</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-underside"></div>
+              <div class="info-col info-part">
+                <p>Underside</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#667215</p>
+              </div>
+              <div class="info-col">
+                <p>102,114,21</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-markings"></div>
+              <div class="info-col info-part">
+                <p>Markings</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#385710</p>
+              </div>
+              <div class="info-col">
+                <p>56,87,16</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-horns"></div>
+              <div class="info-col info-part">
+                <p>Horns</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#C0B9B5</p>
+              </div>
+              <div class="info-col">
+                <p>192,185,181</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-horn-rings"></div>
+              <div class="info-col info-part">
+                <p>Horn Rings</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#1B2A0D</p>
+              </div>
+              <div class="info-col">
+                <p>27,42,13</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-ring"></div>
+              <div class="info-col info-part">
+                <p>Ring</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#9C4136</p>
+              </div>
+              <div class="info-col">
+                <p>156,65,54</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-wing-grad-1"></div>
+              <div class="info-col info-part">
+                <p>Ventral Wings 1</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#3D4D2F</p>
+              </div>
+              <div class="info-col">
+                <p>61,77,47</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-wing-grad-2"></div>
+              <div class="info-col info-part">
+                <p>Ventral Wings 2</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#8B892C</p>
+              </div>
+              <div class="info-col">
+                <p>61,77,47</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-eyes"></div>
+              <div class="info-col info-part">
+                <p>Eyes</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#A3B401</p>
+              </div>
+              <div class="info-col">
+                <p>163,180,1</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-pawpads"></div>
+              <div class="info-col info-part">
+                <p>Paw Pads</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#D2B074</p>
+              </div>
+              <div class="info-col">
+                <p>210,176,116</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-fins-border"></div>
+              <div class="info-col info-part">
+                <p>Fins Border</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#40301B</p>
+              </div>
+              <div class="info-col">
+                <p>64,48,27</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-fins-1"></div>
+              <div class="info-col info-part">
+                <p>Fins 1</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#695B4F</p>
+              </div>
+              <div class="info-col">
+                <p>105,91,79</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-fins-2"></div>
+              <div class="info-col info-part">
+                <p>Fins 2</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#C3A68E</p>
+              </div>
+              <div class="info-col">
+                <p>195,166,142</p>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="color-box czero-flesh"></div>
+              <div class="info-col info-part">
+                <p>Flesh</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#9A6656</p>
+              </div>
+              <div class="info-col">
+                <p>154,102,86</p>
+              </div>
+            </div>
+            <div class="info-row hideable">
+              <div class="color-box czero-member-1"></div>
+              <div class="info-col info-part">
+                <p>Member 1</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#C45B42</p>
+              </div>
+              <div class="info-col">
+                <p>196,12,0</p>
+              </div>
+            </div>
+            <div class="info-row hideable">
+              <div class="color-box czero-member-2"></div>
+              <div class="info-col info-part">
+                <p>Member 2</p>
+              </div>
+              <div class="info-col info-hex">
+                <p>#A84E38</p>
+              </div>
+              <div class="info-col">
+                <p>168,12,0</p>
+              </div>
+            </div>
+            <div class="info-pseudo"></div>
+            <hr />
+            <div class="info-text">
+              <h3 class="info-notes">Notes</h3>
+              <ul>
+                <li>Czero has a marking on the left side of his nose</li>
+                <li>His cheek marking is on both sides</li>
+                <li>The wing membrane goes over his shoulder and down to his forelegs</li>
+                <li>There is a red ring on his left horn</li>
+                <li>The ring is Seledrex's body color</li>
+              </ul>
+            </div>
+            <div class="info-download">
+              <a id="character-dl" href="../dwn/CzeroSFW.png" download="CzeroSFW.png">
+                <button type="button" class="btn btn-primary download-button">
+                  Download File
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="../js/vendor/jquery-3.4.1.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
+    <script src="../js/vendor/bootstrap4-toggle.js"></script>
     <script src="../js/vendor/bootstrap.min.js"></script>
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/reference.js"></script>
   </body>
 </html>

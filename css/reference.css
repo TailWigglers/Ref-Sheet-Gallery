@@ -161,23 +161,35 @@ body {
   flex-direction: column;
 }
 
+.reference-character-container {
+  background-color: #0f1114;
+}
+
 /* ------------------------------------------------------------------------- */
 
 /* Reference sheet */
 
 .reference-sheet {
-  background-color: black;
+  background-color: #0f1114;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 2;
 }
 
 .responsive-image {
   max-width: 100%;
+}
+
+.reference-border {
+  border-width: 5px;
+  border-color: var(--text-color);
+  border-style: solid;
+  border-left: hidden;
+  border-top: hidden;
+  border-right: hidden;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -313,13 +325,22 @@ body {
     font-size: 25pt;
   }
 
-  .reference-area-container {
+  .reference-sheet {
+    flex: 2;
+  }
+
+  .reference-character-container {
+    display: flex;
+  }
+
+  .reference-area-container-change {
     flex-direction: row;
   }
 
   .reference-info-container {
     font-size: 16px;
     min-width: 550px;
+    max-width: 550px;
   }
 
   .info-row {
