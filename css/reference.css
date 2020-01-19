@@ -22,6 +22,40 @@ li {
 
 /* ------------------------------------------------------------------------- */
 
+/* Text highlight */
+
+p::selection {
+  background: white;
+  color: black;
+}
+
+p::-moz-selection {
+  background: white;
+  color: black;
+}
+
+li::selection {
+  background: white;
+  color: black;
+}
+
+li::-moz-selection {
+  background: white;
+  color: black;
+}
+
+h3::selection {
+  background: white;
+  color: black;
+}
+
+h3::-moz-selection {
+  background: white;
+  color: black;
+}
+
+/* ------------------------------------------------------------------------- */
+
 /* Wrapper container */
 
 .wrapper,
