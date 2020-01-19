@@ -80,6 +80,8 @@ body {
   align-items: center;
   color: var(--title-color);
   font-family: "Lalezar", cursive;
+  flex-shrink: 0;
+  flex-basis: auto;
 }
 
 .logo-container {
@@ -159,6 +161,8 @@ body {
   justify-content: center;
   align-items: stretch;
   flex-direction: column;
+  flex-shrink: 0;
+  flex-basis: auto;
 }
 
 .reference-character-container {
