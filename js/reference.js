@@ -45,7 +45,12 @@ function switchNSFW(character) {
   var elements = document.getElementsByClassName("hideable");
   Array.prototype.forEach.call(elements, function(element) {
     element.style.visibility = "visible";
-    element.style.display = "flex";
+
+    if (element.tagName === "LI") {
+      element.style.display = "list-item";
+    } else {
+      element.style.display = "flex";
+    }
   });
 }
 
