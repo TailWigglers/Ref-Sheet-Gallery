@@ -11,7 +11,7 @@ $(function() {
         switchNSFW(character);
       } else {
         if (!confirm("You must be at least 18 years old to view this content!")) {
-          $("#toggle-event").bootstrapToggle("off");
+          $("#toggle-boi").bootstrapToggle("off");
         } else {
           switchNSFW(character);
           sessionStorage.setItem("over_eighteen", "true");
