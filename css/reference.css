@@ -267,6 +267,14 @@ body {
   display: none;
 }
 
+.artist-link {
+  color: var(--text-color);
+}
+
+.artist-link:hover {
+  color: var(--title-color);
+}
+
 /* ------------------------------------------------------------------------- */
 
 /* Download button */
