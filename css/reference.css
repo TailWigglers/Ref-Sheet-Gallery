@@ -275,6 +275,19 @@ body {
   color: var(--title-color);
 }
 
+.artist-note {
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: var(--title-color);
+  background-color: #5d2424;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  border-color: crimson;
+}
+
 /* ------------------------------------------------------------------------- */
 
 /* Download button */
