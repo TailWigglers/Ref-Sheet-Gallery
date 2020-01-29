@@ -1,6 +1,14 @@
 const seledrex = "Seledrex";
 const czero = "Czero";
 
+$(document).ready(function() {
+  var character = window.location.pathname.slice(1, -1);
+
+  if ($("#toggle-boi").prop("checked")) {
+    switchNSFW(character);
+  }
+});
+
 $(function() {
   $("#toggle-boi").change(function() {
     var character = window.location.pathname.slice(1, -1);
