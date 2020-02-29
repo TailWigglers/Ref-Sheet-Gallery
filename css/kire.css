@@ -2,34 +2,46 @@
   background-image: url("../img/kire_sfw.jpg");
 }
 
-.kire-body-1 {
-  background-color: #eaf8f7;
+.kire-horns {
+  background-color: #dbdfd8;
 }
 
-.kire-body-2 {
-  background-color: #061817;
+.kire-underside {
+  background-color: #d5d6cc;
 }
 
-.kire-fins-1 {
-  background-color: #061817;
+.kire-ears {
+  background-color: #8d897e;
 }
 
-.kire-fins-2 {
-  background-color: #eaf8f7;
+.kire-primary {
+  background-color: #6e6e6e;
 }
 
-.kire-wings-1 {
-  background-color: #061817;
+.kire-secondary {
+  background-color: #4b4b4b;
 }
 
-.kire-wings-2 {
-  background-color: #eaf8f7;
+.kire-tertiary {
+  background-color: #282828;
 }
 
-.kire-horns-chest {
-  background-color: #999999;
+.kire-green {
+  background-color: #3d8b38;
 }
 
-.kire-eyes {
-  background-color: #3f8f39;
+.kire-yellow {
+  background-color: #8e8e38;
+}
+
+.kire-red {
+  background-color: #8a3837;
+}
+
+.kire-member-1 {
+  background-color: #91422d;
+}
+
+.kire-member-2 {
+  background-color: #753423;
 }
