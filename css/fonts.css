@@ -7,3 +7,8 @@
   font-family: Source Code Pro;
   src: url("../fonts/SourceCodePro-Regular.ttf");
 }
+
+@font-face {
+  font-family: Montserrat Subrayada;
+  src: url("../fonts/MontserratSubrayada-Bold.ttf");
+}
